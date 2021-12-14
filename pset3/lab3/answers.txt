@@ -1,0 +1,72 @@
+sort1 uses: Bubble Sort
+
+How do you know?: 
+1. Bubble Sort is the only algorithms in the three that O(n2)>OMEGA(n), and the test data sorted50000 use less time than reversed50000 match that.
+2. Sort1 take more time in reversed and rondom data test than sort2 and sort3.
+3. Sort1 take less time in sorted50000 data than sort2 and sort3, match n < nlogn < n2(n=50000) .
+
+
+sort2 uses: Merge Sort
+
+How do you know?: 
+1. Sort2 use almost the same time in reversed and sorted data, match O(n log n),OMEGA(n log n).
+2. Sort2 take least time in reversed data test, match nlogn < n2.
+
+
+sort3 uses: Selection Sort
+
+How do you know?: 
+1. Sort3 use almost the same time in reversed and sorted data, match O(n2),OMEGA(n2).
+2. Sort3 take more time than sort2, match n2 > nlogn.
+
+
+
+// Sort Algorithms:
+// Selection sort: O(n2),OMEGA(n2);
+// Bubble sort: O(n2),OMEGA(n);
+// Merge sort: O(n log n),OMEGA(n log n).
+
+
+// Test Data:
+// R-rondom; RE-reversed; S-sorted.
+
+sort1:
+R5000-0.070s
+R10000-0.520s
+R50000-15.020s
+
+RE5000-0.055s
+RE10000-0.353s
+RE50000-11.702s
+
+S5000-0.011s
+S10000-0.019s
+S50000-2.076s
+
+
+sort2:
+R5000-0.011s
+R10000-0.019s
+R50000-1.547s
+
+RE5000-0.009s
+RE10000-0.111s
+RE50000-3.947s
+
+S5000-0.013s
+S10000-0.018s
+S50000-2.331s
+
+
+sort3:
+R5000-0.035s
+R10000-0.227s
+R50000-6.559s
+
+RE5000-0.034s
+RE10000-0.246s
+RE50000-8.820s
+
+S5000-0.034s
+S10000-0.169s
+S50000-6.858s

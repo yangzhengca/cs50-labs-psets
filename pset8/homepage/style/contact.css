@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.wid {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/* .cen {
+  align-items: center;
+} */
+
+main {
+  align-items: center;
+  max-width: 90%;
+  margin: 6rem auto;
+}
